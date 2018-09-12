@@ -733,6 +733,7 @@ public class HashMap<K, V> extends AbstractMap<K, V> implements Map<K, V>, Clone
 	 */
 	void addEntry(int hash, K key, V value, int bucketIndex) {
 		if ((size >= threshold) && (null != table[bucketIndex])) {
+			//扩容
 			resize(2 * table.length);
 			hash = (null != key) ? hash(key) : 0;
 			bucketIndex = indexFor(hash, table.length);
