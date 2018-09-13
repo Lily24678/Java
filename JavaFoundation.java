@@ -9,6 +9,11 @@ import java.util.TreeSet;
 
 import org.junit.Test;
 
+/**
+ * Java基础 
+ * @author lishangyun
+ * @time 2018年9月13日下午1:34:43
+ */
 //自定义异常1
 class MyException extends Exception {
 	private static final long serialVersionUID = 1L;
