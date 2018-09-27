@@ -4,6 +4,7 @@
 	3、HashMap的源码解析：HashMap_JDK1.7.java
 	4、java.nio：NIOTest.java
 	5、有助改善性能的技巧 OptimizationSkill.java
+	6、volatile关键字+多线程：文件目录/volatile_hello
 	
 二、映射
 	1、文件目录：reflect
@@ -24,3 +25,4 @@
 		
 三、线程池
 文件目录：/thread_pool
+
