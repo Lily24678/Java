@@ -1,0 +1,28 @@
+	<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			var i = 0;
+			var time;
+			function changeN(){
+				time = setInterval("addnum()",500);
+			}
+			function addnum(){
+				var d = document.getElementById("addNumber");
+				d.value = i;
+				i++;
+			}
+			function stopnum(){
+				clearInterval(time);
+			}
+			
+		</script>
+	</head>
+	<body">
+		<input type="text" name="number" value="" id="addNumber"/>
+		<input id="sta" type="button" name="start" value="开始" onclick="changeN()"/>
+		<input id="stp" type="button" name="stop" value="停止" onclick="stopnum()" />
+	</body>
+</html>

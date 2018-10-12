@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<!--创建一个HTML的页面.
+【步骤二】：在页面中创建一个广告部分的DIV,并且设置DIV是隐藏的.
+【步骤三】：设置定时操作,5秒钟执行一个显示的方法.
+【步骤四】：在设置一个定时,5秒钟执行一个隐藏的方法.-->
+	<script src="js/jquery-1.11.3.min.js"></script>
+	<script>
+		//jq
+		var time;
+		/*$(function(){
+			time = setInterval("showad()",1000);
+		});*/
+		/*	function showad(){
+				$("#div01").slideDown(2000);
+				clearInterval(time);
+				time = setInterval("missad()",5000)
+			}
+			function missad(){
+				$("#div01").slideUp(2000);
+				clearInterval(time);
+			}*/
+		//	$(function(){
+		//		$("#botton01").click(function(){
+		//			$("#myi").animate({
+		//			width:"200%",
+		//			height:"200%",
+		//			fontSize:"10em"
+		//		},1000);
+		//		});
+		//	});
+		// 在一个动画中同时应用三种类型的效果
+		$(function(){
+			$("#go").click(function() {
+			$("#block").animate({
+				width: "90%",
+				height: "100%",
+				fontSize: "10em",
+				borderWidth:10
+			}, 1000);
+		});
+		});
+		
+		
+	</script>
+
+	<body>
+		<!--<div id="div01" style="border: solid 3px rosybrown;width: 400px;height: 400px;display: none;">
+			<img id="myi" src="okwu.jpg"/>
+		<!--</div>-->
+		<!--<input id="botton01" type="button" />-->
+		<button id="go"> Run</button>
+		<div id="block">Hello!</div>
+	</body>
+
+</html>

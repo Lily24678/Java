@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script>
+			$(function(){
+				$("input[name='del']").click(function(){
+					$(this).parent().parent().remove();
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<table width="400" border="1" align="center" id="tal">
+			<thead>
+				<tr>
+					<th colspan="4" align="center">琅琊榜</th>
+				</tr>
+				<tr>
+					<th width="99">姓名</th>
+					<th width="95">内功</th>
+					<th width="132">颜值</th>
+					<th>
+						<input type="button" value="删除1" name="del"/>
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td>虚竹</td>
+					<td>99</td>
+					<td>80</td>
+					<td><input type="button" value="删除2" name="del"/></td>
+				</tr>
+				<tr>
+					<td>段誉</td>
+					<td>90</td>
+					<td>100</td>
+					<td><input type="button" value="删除3" name="del"/></td>
+				</tr>
+				<tr>
+					<td>小九</td>
+					<td>88</td>
+					<td>-100</td>
+					<td><input type="button" value="删除4" name="del"/></td>
+				</tr>
+			</tbody>
+
+		</table>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//需求:每当页面加载的时候,图片就开始每个一秒换一张图片
+			function setTime(){
+				window.setInterval("getImage()",1000);
+			}
+			
+			//获取图片
+			var i = 1;
+			function getImage(){
+				i++;
+				if(i==4){
+					i=1;
+				}
+				var ima = document.getElementById("image");
+				ima.src = i + ".jpg";				
+			}
+			
+		</script>
+	</head>
+	<!--页面加载-->
+	<body onload="setTime()">
+		<img src="1.jpg" id="image"/>
+	</body>
+</html>

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<script>
+		var arr = new Array();
+		arr[0] = new Array("诸葛亮", "刘备", "曹操");
+		arr[1] = new Array("武大郎", "武松", "不知道");
+
+		/*function changet() {
+			var select01 = document.getElementById("select01");
+			var select02 = document.getElementById("select02");
+			//select02.options.length = 1;
+			for (var i = select02.options.length-1; i >0 ; i--) {
+				 select02.options[i]=null;
+			}
+
+			//获取arr的每个元素
+			for(var i = 0; i < arr.length; i++) {
+				if(i == select01.value) {					
+					for(var j = 0; j < arr[i].length; j++) {
+						var newEl = document.createElement("option");
+						var newTx = document.createTextNode(arr[i][j]);
+						newEl.appendChild(newTx);
+						select02.appendChild(newEl);
+					}
+				}
+			}
+		}*/
+
+		function changet() {
+			var select01 = document.getElementById("select01");
+			var index = select01.value;
+			alert(index);
+
+			for(var i = 0; i < arr[index].length; i++) {
+				var newEl = document.createElement("option");
+				var newTx = document.createTextNode(arr[index][i]);
+				newEl.appendChild(newTx);
+				select02.appendChild(newEl);
+			}
+		}
+	</script>
+
+	<body>
+		<!--select的事件onchange-->
+		<select id="select01" onchange="changet()">
+			<option value="">--请选择--</option>
+			<option value="0">三国</option>
+			<option value="1">水浒</option>
+		</select>
+
+		<select id="select02">
+			<option value="">--请选择--</option>
+		</select>
+		
+	</body>
+
+</html>

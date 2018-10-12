@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			/*需求:点击按钮,获取文本框的值,并判断是否填写*/
+			//1,判断事件源.
+			//2,在事件源上写事件.
+			//3,事件处理程序.操作事件源后发生什么
+			function tips(id, content) {
+				var ele = document.getElementById(id);
+				ele.innerHTML = "<font color='red'>" + content + "</font>"
+			}
+
+			function checkform() {
+				var na = document.getElementById("username");
+				var pss = document.getElementById("password");
+				if(na.value == "" ) {
+					tips("user", "请输入用户名");
+					
+					return false;
+				}
+				if(pss.value == ""){
+					tips("psw", "请输入密码");
+					return false;
+				}
+			}
+		</script>
+	</head>
+
+	<body>
+		<form action="" method="get"  onsubmit="return checkform()">
+			<table width="276" border="1" align="center">
+				<tr>
+					<td width="61">用户名</td>
+					<td width="199">
+						<input id="username" name="username" type="text" onfocus=" tips('user','请输入用户名')" />
+						<span id="user"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>密码</td>
+					<td>
+					<input id="password" type="password" onfocus="tips('psw','请输入密码')"/>
+					<span id="psw"></span>
+					</td>
+				</tr>
+				<tr>
+					<td colspan="2" align="center"><input type="submit" value="注册" /></td>
+				</tr>
+			</table>
+		</form>
+
+	</body>
+
+</html>

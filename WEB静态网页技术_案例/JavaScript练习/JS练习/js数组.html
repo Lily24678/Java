@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//创建数组
+			var arr = new Array();
+			//数组初始化赋值
+			arr[0] = "01小明";
+			arr[1] = "02小明";
+			arr[2] = "03小明";
+			//向数组中添加元素
+			arr.push("04小明");
+						
+			//遍历数组
+			for (var i = 0; i < arr.length; i++) {
+			alert(arr[i]);
+			}
+			
+			//连接数组中的元素
+			var str = arr.join();//默认分隔符是，
+			alert(str);
+			
+			//删除数组中最后一个元素,返回删除的元素
+			var none = arr.pop();//弹栈模式
+			alert(none);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

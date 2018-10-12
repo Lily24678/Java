@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			/*第一个下拉框的内容显示的内容改变的同时，第二个下拉框的内容也跟着改变*/
+			/*明确以下几点：
+			 1，开始的时候没有选定下拉列表中任何的一个选项，所以第二个下拉列表是没有内容
+			 2，每个选项里面应该有数据，假设选着了莉莉选项，第二选项的下拉列表中应该有关于莉莉的其他信息，这些信息放在数组里
+			 3，将数组的内容要添加到第二下拉列表中*/
+			//二维数组
+			var arrays=[
+			   ["合肥市", "阜阳市", "六安市"],
+			   ["武汉市", "黄冈市", "荆州市"],
+			   ["南京", "徐州", "苏州"]
+			];
+
+			$(function() {
+				//改变省级内容，获取对应的市级，并把所有的 市添加到对用select中
+				//1、省级的change事件
+				$("#mypro").change(function() {
+					//2、获取选中的省级的下标（方便获取市）
+					var index = $("#mypro").val();
+					$("#mycity").empty();
+					//3、遍历省对应的所有的市，
+					$.each(arrays[index], function(i, n) {
+						//4、把市添加到市的select中
+						var option1 = "<option>"+n+"</option>";
+						$("#mycity").append(option1);
+					});
+				});
+
+			});
+
+		</script>
+	</head>
+
+	<body>
+		<select id="mypro">
+			<option>--请选择--</option>
+			<option value="0">安徽省</option>
+			<option value="1">湖北省</option>
+			<option value="2">江苏省</option>
+		</select>
+		<select id="mycity"></select>
+			
+	</body>
+
+</html>

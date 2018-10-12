@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function starts() {
+				//获取停止元素
+				var stp = document.getElementById("stop");
+				//设置属性
+				stp.setAttribute("disabled", "disabled");
+				//删除开始的disabled属相
+				var str = document.getElementById("str");
+				str.removeAttribute("disabled");
+			}
+
+			function stop() {
+				var stp = document.getElementById("str");
+				//设置属性
+				stp.setAttribute("disabled", "disabled");
+				//删除开始的disabled属相
+				var str = document.getElementById("stop");
+				str.removeAttribute("disabled");
+			}
+		</script>
+	</head>
+
+	<body>
+		<input id="str" type="button" value="开始" disabled="disabled" onclick="stop()" />
+		<input id="stop" type="button" value="停止" onclick="starts()" />
+	</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="jquery-1.11.3.min.js"></script>
+		<script>
+			$(function(){
+				$("#move2right").click(function(){
+					$("#selectLeft option:selected").appendTo("#selectRight");
+				});
+				$("#move2left").click(function(){
+					$("#selectRight option:selected").appendTo("#selectLeft");
+				});
+			});
+		</script>
+	</head>
+	<body>
+		<select id="selectLeft" multiple="multiple">
+			<option>1</option>
+			<option>2</option>
+			<option>3</option>
+		</select>
+		<input id="move2right" type="button" value="&gt;&gt;" />
+		<input id="move2left" type="button" value="&lt;&lt;" />
+		<select id="selectRight" multiple="multiple">
+			<option>4</option>
+			<option>5</option>
+			<option>6</option>
+		</select>
+	</body>
+</html>

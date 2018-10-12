@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>frame标签</title>
+	</head>
+	
+	<frameset rows="10%,*">
+		<!--
+        	标签frameset与body冲突,有frame就没有body标签.
+        	frameset属性rows,cols.
+        	*代表框架的剩余部分.
+        -->
+		<!--
+		<frame  src="top.html" name="down"/>
+		<!--
+        	frame的属性: src:显示什么,引用.
+        				name:显示的位置.
+        -->
+		<!--
+		<frame  src="" name="bottom"/>
+		<!--<frame  src=""/>-->
+		<frameset rows="40%,*" border="30px" bordercolor="green">
+			<frame src="top1.html" name="top"/>
+			<frameset cols="20%,*" border="20px" bordercolor="red">
+				<frame src="right1.html" name="right"/>
+				<frame src="img/1458884069048420.jpg" name="left"/>
+				<!--
+					<div style="border: 10px blue double;">第一个div</div>
+					<div style="border: 10px blue double;">第二个div</div>
+					<div style="border: 10px blue double;">第仨个div</div>
+					此段代码显示不出，在frameset中只显示引入的文件内容
+				-->
+		</frameset>
+	</frameset>
+	</frameset>
+
+</html>

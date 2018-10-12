@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			.mydiv{
+				border: solid blue 3px;
+				background-color: bisque;
+			}
+			#mydiv{
+				border: solid blue 3px;
+				background-color: blueviolet;
+			}
+		</style>
+		<script src="js/jquery-1.11.3.min.js"></script>
+		<script>
+			$(function(){
+				//获取属性
+				$(".mydiv").css("background");
+				$(".mydiv").addClass("mydiv");
+			});
+		</script>
+	</head>
+	<body>
+		<div class="mydiv">你好</div>
+		<div id="mydiv">hao</div>
+	</body>
+</html>

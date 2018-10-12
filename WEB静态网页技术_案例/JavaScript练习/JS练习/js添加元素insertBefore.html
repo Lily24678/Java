@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			function addimg(){
+				var mydiv = document.getElementById("mydiv");
+				var myimg = document.getElementById("myimg");
+				var img1 = document.createElement("img");
+				img1.src ="无标题01.png";
+				mydiv.insertBefore(img1,myimg);
+			}
+		</script>
+	</head>
+
+	<body>
+		<div id="mydiv">
+			<img id="myimg" src="无标题.png" />
+		</div>
+		<input type="button" value="添加图片" onclick="addimg()"/>
+	</body>
+
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script type="text/javascript">
+			/*需求:页面加载5秒后显示广告,再过5秒广告消失*/
+			var time;
+			window.onload = function(){
+				time = setInterval("showAD()",2000);
+			}
+			
+			function showAD(){
+				var mydiv =document.getElementById("mydiv");
+				//元素.style.display
+				mydiv.style.display = "block";
+				clearInterval("time");
+				time = setInterval("hideAD()",2000);
+				
+			}
+			
+			function hideAD(){
+				var mydiv =document.getElementById("mydiv");
+				mydiv.style.display = "none";
+				clearInterval("time");
+			}
+		</script>
+	</head>
+	<body>
+		<div id="mydiv" style="display: none;">
+			<img src="2.jpg" />
+		</div>
+	</body>
+</html>

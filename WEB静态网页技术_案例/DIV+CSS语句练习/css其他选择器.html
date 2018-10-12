@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			/*属相选择器*/
+			/*input[type="text"]{
+				background-color: #0000FF;
+			}*/
+			/*后代选择器*/
+			#id1 input{
+				color: burlywood;
+				border: dotted;
+			}
+			/*子选择器*/
+			/*相邻兄弟选择器*/
+			/*选择器分组*/
+		</style>
+	</head>
+	<body>
+		<font>
+			<input type="text" name="username" value="username"/><br />
+			<input type="password" name="password" value="password"/>
+		</font>
+		<hr />
+		
+		<div id="id1" style="border: red 1px solid; width: 50; height: 500;">div1
+			<font>
+				<input type="text" name="checkbox" value="" checked="吃"/>吃
+				<input type="text" name="checkbox" value=""/>喝
+				<input type="text" name="checkbox" value=""/>玩
+			</font>
+			<div style="border: yellow 5px solid; width: 20; height: 250;">div2
+				<font>
+				<input type="text" name="checkbox" value="" checked="吃"/>吃
+				<input type="text" name="checkbox" value=""/>喝
+				<input type="text" name="checkbox" value=""/>玩
+			</font>
+				<div style="border: greenyellow 10px solid; width: 10; height: 150;">div3
+			<font>
+				<input type="text" name="checkbox" value="" checked="吃"/>吃
+				<input type="text" name="checkbox" value=""/>喝
+				<input type="text" name="checkbox" value=""/>玩
+			</font>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

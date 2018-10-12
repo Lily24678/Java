@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script>
+			//1,判断事件源.
+			//2,在事件源上写事件.
+			//3,事件处理程序.操作事件源后发生什么
+			function show1() {
+				var img = document.getElementById("myimg");
+				//元素.style.display
+				img.style.display = "block";
+			}
+			function miss1() {
+				var img = document.getElementById("myimg");
+				img.style.display = "none";
+			}
+		</script>
+	</head>
+	<body>
+		<div>
+			<img src="1eclipse快捷键.jpg" id="myimg" />
+		</div>
+		<input type="button" name="" value="显示" onclick="show1()" />
+		<input type="button" name="" value="消失" onclick="miss1()" />
+	</body>
+
+</html>
