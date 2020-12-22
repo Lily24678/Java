@@ -1,3 +1,4 @@
+package keyword.kw_transient;
 
 import java.io.Externalizable;
 import java.io.File;
@@ -34,10 +35,10 @@ public class ExternalizableTest implements Externalizable {
 	public static void main(String[] args) throws Exception {
 
 		ExternalizableTest et = new ExternalizableTest();
-		ObjectOutput out = new ObjectOutputStream(new FileOutputStream(new File("test")));
+		ObjectOutput out = new ObjectOutputStream(new FileOutputStream(new File("/home/smates/temp/Java/test.txt")));
 		out.writeObject(et);
 
-		ObjectInput in = new ObjectInputStream(new FileInputStream(new File("test")));
+		ObjectInput in = new ObjectInputStream(new FileInputStream(new File("/home/smates/temp/Java/test.txt")));
 		et = (ExternalizableTest) in.readObject();
 		System.out.println(et.content);
 

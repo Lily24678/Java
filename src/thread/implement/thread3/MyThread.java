@@ -1,4 +1,4 @@
-package thread_pool;
+package thread.implement.thread3;
 
 /**
  * 定义一个线程类，作为任务对象。

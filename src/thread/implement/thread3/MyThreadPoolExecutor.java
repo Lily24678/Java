@@ -1,4 +1,4 @@
-package thread_pool;
+package thread.implement.thread3;
 
 import java.util.concurrent.BlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;

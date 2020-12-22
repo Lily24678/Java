@@ -15,6 +15,6 @@ import annotation.definition.Anno3;
 public class AnnotationDemo1 {
 	@MyTest
 	public void demo1() {
-		System.out.println("demo1执行了...");
+		System.out.println("方法demo1执行了...");
 	}
 }

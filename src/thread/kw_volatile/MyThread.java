@@ -1,4 +1,4 @@
-package volatile_hello;
+package thread.kw_volatile;
 
 public class MyThread extends Thread {
 	private volatile boolean stop = false;// 确保stop变量在多线程中可见

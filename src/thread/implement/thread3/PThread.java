@@ -1,4 +1,4 @@
-package thread_pool;
+package thread.implement.thread3;
 /**
  * PThread它的线程主体部分是一个无限循环，该线程在手动关闭前永不结束，并一直等待新的任务到达
  * @author lsy

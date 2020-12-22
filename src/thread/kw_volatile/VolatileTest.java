@@ -1,4 +1,4 @@
-package volatile_hello;
+package thread.kw_volatile;
 
 
 import org.junit.Test;
