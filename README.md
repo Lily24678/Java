@@ -1,7 +1,8 @@
 # Java基础
 ## package others
 1. 【class Outer】内部类:成员内部类,局部内部类
-2. 【package polymorphism】多态的编译与运行
+2. 【class PolymorphismTest】多态的编译与运行
+3. 【class CollectionTest】单列集合
 ## package keyword
 1. 【package kw_final】final
 2. 【package kw_transient】transient

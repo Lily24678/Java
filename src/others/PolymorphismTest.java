@@ -1,4 +1,4 @@
-package others.polymorphism;
+package others;
 
 /**
  * 1，成员变量：编译时：看等号的左边。    运行时：看等号的左边。
@@ -10,5 +10,22 @@ public class PolymorphismTest {
         Fu fu = new Zi();
         System.out.println(fu.num);
         fu.show();
+    }
+}
+
+class Fu {
+    public int num = 20;
+
+    public void show() {
+        System.out.println("method of Fu");
+    }
+}
+
+class Zi extends Fu {
+    public int num = 10;
+
+    @Override
+    public void show() {
+        System.out.println("method of Zi");
     }
 }
